@@ -1,0 +1,8 @@
+activity_main.xml 메인 레이아웃
+ewew.xml 알람일때 레이아웃
+MainActivity.java 여기서 시간설정하고 다함
+AlarmReceiver.java 이것은 어플이 꺼졌을때도 알람을 기억할수 있게
+AlarmService.java 
+AlarmActivity.java 알람의 메인 기능
+AndroidManifest.xml 
+build.gradle
