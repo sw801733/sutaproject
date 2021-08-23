@@ -1,0 +1,4 @@
+mainactivity -> screenservice -> screenreciever -> lockscreenactivity
+androidmanifest 수정함
+메인에서 스크린서비스 불러오는 intent만 해주면 뒤에껀 짜져있는 그대로 가져가면 가능
+레이아웃은 lockscreen만 가져오면 될듯
