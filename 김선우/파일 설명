@@ -2,8 +2,10 @@
 
 AndroidManifest
 
-자바 파일
 Gradle Scripts - build.gradle // viewPage2 사용을 위해 dependencies를 추가
+
+자바 파일
+
 Fragment_1 ~ 4 // 슬라이드 화면을 제어할 fragment들 4개
 MainActivity // 메인
 MyAdapter // 이건 잘 모름
