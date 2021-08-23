@@ -1,0 +1,18 @@
+안드로이드 스튜디어 수정한 파일
+
+AndroidManifest
+
+자바 파일
+Gradle Scripts - build.gradle // viewPage2 사용을 위해 dependencies를 추가
+Fragment_1 ~ 4 // 슬라이드 화면을 제어할 fragment들 4개
+MainActivity // 메인
+MyAdapter // 이건 잘 모름
+SplashActivity // 로딩 화면 제어
+
+
+drawable - 로딩 화면 사진 저장
+
+layout
+activity_main // 메인 화면 레이아웃
+activity_splash // 로딩화면 레이아웃
+f_1 ~ 4 // 각 슬라이드 레이아웃 4
