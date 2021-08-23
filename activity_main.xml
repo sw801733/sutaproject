@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical" >
+
+    <Switch
+    android:id="@+id/VibSwitch"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+
+    android:scrollbarSize="4dp"
+    android:switchMinWidth="70dp"
+
+    android:text="진동 사용"
+
+    android:textColor="#ff0000"
+    android:textSize="30dp"
+    android:textStyle="bold" />
+
+    <Button
+        android:id="@+id/VibOn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="진동 On" />
+
+    <Button
+        android:id="@+id/VibOff"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="진동 Off" />
+
+
+</LinearLayout>
