@@ -1,0 +1,10 @@
+mainactivity.java 
+ - 툴바(수타면,옵션버튼), 체크박스,설정한 시간표시, 편집버튼 활성화 및 기능
+subactivity.java
+ - 설정한 시간을 표시하기 위해 만든 액티비티(타임피커)
+activity_main.xml
+ - 메인액티비티 디자인
+activity_sub.xml
+ - 서브액티비티 디자인
+toolbar.xm
+ -둘바 디자인
