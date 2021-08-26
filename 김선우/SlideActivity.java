@@ -1,20 +1,24 @@
 package com.example.sp1;
-
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.viewpager2.adapter.FragmentStateAdapter;
 import androidx.viewpager2.widget.ViewPager2;
-
+import android.content.Intent;
 import android.os.Bundle;
+import android.view.View;
+import android.widget.Button;
+
+
 
 import me.relex.circleindicator.CircleIndicator3;
 
-public class MainActivity extends AppCompatActivity {
+public class SlideActivity extends AppCompatActivity {
     private ViewPager2 mPager;
     private FragmentStateAdapter pagerAdapter;
     private int num_page = 4;
     private CircleIndicator3 mIndicator;
+    private Button onBtn, offBtn;
     @Override protected void onCreate(Bundle savedInstanceState) {
-        super.onCreate(savedInstanceState); setContentView(R.layout.activity_main);
+        super.onCreate(savedInstanceState); setContentView(R.layout.activity_slide);
         /** * 가로 슬라이드 뷰 Fragment */
         //ViewPager2
         mPager = findViewById(R.id.viewpager);
@@ -34,9 +38,21 @@ public class MainActivity extends AppCompatActivity {
             @Override public void onPageScrolled(int position, float positionOffset, int positionOffsetPixels) {
                 super.onPageScrolled(position, positionOffset, positionOffsetPixels); if (positionOffsetPixels == 0) {
                     mPager.setCurrentItem(position); } }
-                    @Override public void onPageSelected(int position) {
+            @Override public void onPageSelected(int position) {
                 super.onPageSelected(position); mIndicator.animatePageSelected(position%num_page); }
         });
-    }
-}
 
+        onBtn= (Button)findViewById(R.id.button2);
+
+        onBtn.setOnClickListener(new View.OnClickListener(){
+            @Override
+            public void onClick(View v) {
+                Intent intent = new Intent(getApplicationContext(), ScreenService.class);
+                startService(intent);
+            }
+
+        });
+    }
+
+
+}
